@@ -1,0 +1,10 @@
+dependencies
+bin/
+
+# Eclipse IDE metadata
+.classpath
+.project
+.settings/
+
+# Mac files
+.DS_Store
