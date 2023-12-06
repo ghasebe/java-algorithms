@@ -20,13 +20,18 @@ public class Dijkstra {
 			this.weight = weight;
 		}
 	}
-	
-	public static class Node {
+
+	public static class Node implements Comparable<Node> {
 		int key, dist;
 		
 		public Node(int key, int dist) {
 			this.key = key;
 			this.dist = dist;
+		}
+		
+		@Override
+		public int compareTo(Node other) {
+			return Integer.compare(this.dist, other.dist);
 		}
 	}
 	
